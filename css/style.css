@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    /* test 
-    border: 1px solid red;
-    */
 }
 /* reset */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
 
 .clearfix::after {
     content: '';
@@ -26,39 +26,69 @@
 h1 {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
     color: #e53170;
+
+    font-weight: 1000;
 }
 
 section p:only-of-type {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
+
     text-align: center;
+
+    font-weight: 400;
 }
 
 /*Fine Prima Sezione */
 
 /* Sezione Colonne */
 
-.row .column {
+.row {
+    padding: 5px 0 0 20px;
+}
+
+.row div {
     float: left;
     width: calc(100% / 3);
+    margin-bottom: 10px;
+}
+
+.row div .column {
+    width: 100%;
+    float: left;
+    padding: 30px 20px 0 0;
 
     color: white;
     background-color: #0f0e17;
+    background-clip: content-box;
 }
 
-.row .column img {
-    width: 70px;
+.row div .column img {
+    width: 82px;
     float: left;
     margin-right: 10px;
 }
 
 ul {
     list-style: none;
-    padding-top: 7px;
+    padding: 9px;
+    box-shadow: 2px 2px 10px #000000;
+    
 }
 
+ul li:first-child {
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+ul li:nth-child(2) {
+    font-size: small;
+}
+
+a[href="mailto:tua@email.com"] {
+    text-decoration: none;
+    color: #4AC6F2;
+    font-size: small;
+}
 /* Fine Sezione Colonne */
