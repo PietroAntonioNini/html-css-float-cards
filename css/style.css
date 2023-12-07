@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 
-    /* test */
+    /* test 
     border: 1px solid red;
+    */
 }
 /* reset */
 
@@ -20,21 +21,44 @@
     margin-right: auto;
 }
 
+/* Prima Sezione */
+
 h1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
     color: #e53170;
-    te
 }
 
 section p:only-of-type {
-    color: rgb(169, 254, 0);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.row {
-    20px
-}
+/*Fine Prima Sezione */
+
+/* Sezione Colonne */
 
 .row .column {
     float: left;
     width: calc(100% / 3);
+
+    color: white;
+    background-color: #0f0e17;
 }
 
+.row .column img {
+    width: 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 7px;
+}
+
+/* Fine Sezione Colonne */
